@@ -7,3 +7,23 @@
 *{
   background: transparent;
 }
+
+.stroke-3 {
+  color:transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color:  black;
+  
+}
+
+.stroke-4 {
+  color:transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color:  white;
+  
+}
+
+main{
+
+  height: 100vh;
+  width: 100vw;
+}

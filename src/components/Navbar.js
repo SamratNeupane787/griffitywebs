@@ -1,6 +1,13 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 const Navbar = () => {
+  const router = useRouter();
+  const navtoServices = () => {
+    router.push("/services");
+  };
   return (
     <div className="navbar  bg-transparent text-white font-monst font-semibold  ">
       <div className="navbar-start">
@@ -35,7 +42,7 @@ const Navbar = () => {
               <a>Blog</a>
             </li>
             <li>
-              <a>Services</a>
+              <a onClick={navtoServices}>Services</a>
             </li>
             <li>
               <a>About Us</a>
@@ -47,8 +54,8 @@ const Navbar = () => {
         Griffity Studios
       </a>
 
-      <div className="navbar-center text-4xl hidden lg:flex navbar-end pr-5">
-        <ul className="menu menu-horizontal px-1 text-2xl">
+      <div className="navbar-center text-3xl hidden lg:flex navbar-end pr-5">
+        <ul className="menu menu-horizontal px-1 text-xl">
           <li>
             <a>Home</a>
           </li>
@@ -62,7 +69,7 @@ const Navbar = () => {
             <a>Blog</a>
           </li>
           <li>
-            <a>Services</a>
+            <a onClick={navtoServices}>Services</a>
           </li>
           <li>
             <a>About Us</a>
